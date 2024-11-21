@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Informative Showcase Algorithms</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="side-nav">
+        <div class="menu-btn">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="side-menu">
+            <ul>
+                <li>
+                    <a href="#arrays">Arrays</a>
+                    <ul>
+                        <li><a href="#array-operations">Basic Operations</a></li>
+                        <li><a href="#array-sorting">Sorting</a></li>
+                        <li><a href="#array-searching">Searching</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#graphs">Graphs</a>
+                    <ul>
+                        <li><a href="#graph-representation">Representation</a></li>
+                        <li><a href="#graph-traversal">Traversal</a>
+                            <ul>
+                                <li><a href="#bfs">BFS</a></li>
+                                <li><a href="#dfs">DFS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#shortest-path">Shortest Path</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#linked-lists">Linked Lists</a>
+                    <ul>
+                        <li><a href="#singly-linked">Singly Linked</a></li>
+                        <li><a href="#doubly-linked">Doubly Linked</a></li>
+                        <li><a href="#circular-linked">Circular Linked</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#trees">Trees</a>
+                    <ul>
+                        <li><a href="#binary-trees">Binary Trees</a></li>
+                        <li><a href="#bst">Binary Search Trees</a></li>
+                        <li><a href="#avl">AVL Trees</a></li>
+                        <li><a href="#red-black">Red-Black Trees</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <header id="header">
+            <div class="logo">
+                <h1>I.S.A.</h1>
+            </div>
+            <div class="content">
+                <div class="inner">
+                    <h2>Informative Showcase Algorithms</h2>
+                    <p>Data Structures and Algorithms</p>
+                </div>
+            </div>
+        </header>
+
+        <div id="main">
+            <article id="arrays">
+                <h2>Arrays</h2>
+                <p>Arrays are fundamental data structures that store elements in contiguous memory locations.</p>
+            </article>
+
+            <article id="array-operations">
+                <h2>Basic Array Operations</h2>
+                <div class="array-demo">
+                    <div class="array-container">
+                        <div id="array-display"></div>
+                    </div>
+                    <div class="controls">
+                        <button onclick="generateRandomArrayBasic()">Generate Random Array</button>
+                        <input type="number" id="arrayInput" placeholder="Enter a number">
+                        <input type="number" id="arrayIndex" placeholder="Enter index">
+                        <button onclick="insertElement()">Insert</button>
+                        <button onclick="deleteElement()">Delete</button>
+                        <button onclick="searchElement()">Search</button>
+                    </div>
+                    <div id="operation-result"></div>
+                </div>
+            </article>
+
+            <article id="array-sorting">
+                <h2>Array Sorting</h2>
+                <div class="array-demo">
+                    <div class="array-container" id="sort-array-display"></div>
+                    <div class="controls">
+                        <button onclick="generateRandomArray()">Generate Random Array</button>
+                        <button onclick="bubbleSort()">Bubble Sort</button>
+                        <button onclick="quickSort()">Quick Sort</button>
+                    </div>
+                </div>
+            </article>
+
+            <article id="array-searching">
+                <h2>Array Searching</h2>
+                <div class="array-demo">
+                    <div class="array-container">
+                        <div id="search-array-display"></div>
+                    </div>
+                    <div class="controls">
+                        <input type="number" id="searchInput" placeholder="Enter number to search">
+                        <button onclick="linearSearch()">Linear Search</button>
+                        <button onclick="binarySearch()">Binary Search</button>
+                    </div>
+                    <div id="search-result"></div>
+                </div>
+            </article>
+
+            <article id="graphs">
+                <h2>Graphs</h2>
+                <p>Content about graphs will go here</p>
+            </article>
+
+            <article id="linkedlists">
+                <h2>Linked Lists</h2>
+                <p>Content about linked lists will go here</p>
+            </article>
+
+            <article id="trees">
+                <h2>Trees</h2>
+                <p>Content about trees will go here</p>
+            </article>
+        </div>
+
+        <footer id="footer">
+            <p>&copy; BRYX</p>
+        </footer>
+    </div>
+
+    <div id="bg"></div>
+</body>
+</html>
